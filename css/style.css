@@ -314,7 +314,7 @@
     }
     .Mobile_nav_menu nav{
         position: fixed;
-        top: 12%;
+        top: 9%;
         left: 50%;
         transform: translate(-50%, 0%);
         background-color: #24292F;
