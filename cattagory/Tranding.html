@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tranding >> Tarak'S Blog</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Dev Tarak- Blogs</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="col_1">
         <div class="col_1_1">
-             <a href="https://devtarak.github.io/blog/"><img src="../img/logo.png" alt="Tara Logo"></a>
+            <a href="https://devtarak.github.io/blog/"><img src="../img/logo.png" alt="Tara Logo"></a>
             <h1>Tarak's Blog</h1>
         </div>
         <div class="col_1_2">
@@ -18,11 +18,27 @@
     </div>
     <div class="main_menu">
         <ul>
-            <li><a href="https://devtarak.github.io/">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="../cattagory/Tranding.html">Tranding</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Resources</a></li>
         </ul>
+    </div>
+    <div class="Mobile_head">
+        <div class="Mobile_logo">
+            <a href="https://devtarak.github.io/blog/"><img src="../img/logo.png" alt="tarak Logo"></a>
+        </div>
+        <div class="Mobile_nav_menu">
+            <button class="MenuButton">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="../cattagory/Tranding.html">Tranding</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="col_2">
         <div class="col_2_1">
@@ -61,5 +77,13 @@
             
         </div>
     </div>
+    <script>
+        const menuButton = document.querySelector('.MenuButton');
+        const mobileNavMenu = document.querySelector('.Mobile_nav_menu nav');
+    
+        menuButton.addEventListener('click', () => {
+            mobileNavMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
