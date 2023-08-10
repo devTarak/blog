@@ -12,8 +12,11 @@
     display: flex;
     width: 50%;
 }
-.col_1_1 img{
+.col_1_1 a{
     width: 10%;
+}
+.col_1_1 a img{
+    width: 100%;
 }
 .col_1_1 h1{
     color: white;
