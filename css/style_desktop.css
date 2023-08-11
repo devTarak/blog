@@ -1,0 +1,132 @@
+@media screen and (min-width: 1280px){
+    .col_1{
+        background-color: #24292F;
+        padding: .7% 0;
+        display: flex;
+        padding: 0 1%;
+    }
+    .col_1_1{
+        display: flex;
+        width: 50%;
+    }
+    .col_1_1 a{
+        width: 10%;
+    }
+    .col_1_1 a img{
+        width: 100%;
+    }
+    .col_1_1 h1{
+        color: white;
+        padding: 2%;
+    }
+    .col_1_2{
+        width: 50%;
+    }
+    .col_1_2 p{
+        color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+    .main_menu{
+       background-color: #6B48FF;
+       margin: 0;
+       padding: auto;
+    }
+    .main_menu ul{
+        list-style: none;
+        margin: 0;
+        padding: .5% 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        background-color: #6B48FF;
+    }
+    .main_menu ul li{
+        display: inline-block;
+        padding: 0 15px 0 15px;
+        text-align: center;
+        font-size: 20px;
+        background-color: #6B48FF;
+    }
+    .main_menu ul li a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        background-color: #6B48FF;
+    }
+    .main_menu ul li a:hover{
+        background-color: white;
+        color: #6B48FF;
+        padding: 1% 10%;
+        border-radius: 2px;
+    }
+    .main_menu ul li a:active{
+        background-color: white;
+        color: #6B48FF;
+        padding: 1% 8%;
+        border-radius: 2px;
+    }
+    .col_2{
+        display: flex;
+        margin-top: 3%;
+        padding: 0 5%;
+    }
+    .col_2_1{
+        width: 70%;
+    }
+    .blog_box{
+        display: flex;
+        background-color: #0D1117;
+        padding: 1%;
+        margin: 1% 1% 5% 1%;
+        border-radius: 5px;
+    }
+    .Under_blog_box1{
+        width: 30%;
+        background-color: #0D1117;
+    }
+    .Under_blog_box1 img{
+        width: 100%;
+        background-color: #0D1117;
+        aspect-ratio: 4 / 3;
+    }
+    .Under_blog_box2{
+        width: 70%;
+        padding: 2%;
+        background-color: #0D1117;
+    }
+    .Under_blog_box2 h3{
+        font-size: 26px;
+        font-weight: 700;
+        background-color: #0D1117;
+        color: white;
+        padding-bottom: 2%;
+    }
+    .Under_blog_box2 p{
+        font-size: 18px;
+        font-weight: 500;
+        background-color: #0D1117;
+        color: white;
+    }
+    .Under_blog_box2 button{
+        background-color: #6B48FF;
+        border: none;
+        border-radius: 2px;
+        padding: 2%;
+        margin-top: 3%;
+        font-size: 16px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .Under_blog_box2 button:hover{
+        background-color: #ffffff;
+        color: #6B48FF;
+    }
+    .col_2_2{
+        width: 30%;
+    }
+    .Mobile_head{
+        display:none;
+    }
+}

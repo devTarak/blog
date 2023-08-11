@@ -1,0 +1,106 @@
+@media screen and (max-width: 600px){
+    .col_1, .main_menu{
+        display: none;
+    }
+    .col_2{
+        display: block;
+    }
+    .col_2_1{
+        width: 100%;
+    }
+    .col_2_2{
+        width: 100%;
+    }
+    .Mobile_head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #6B48FF;
+        color: #fff;
+        padding: 0;
+    }
+    .Mobile_head .Mobile_logo{
+        width: 90%;
+        background-color: #6B48FF;
+        margin: 0px;
+        padding: 0;
+    }
+    .Mobile_head .Mobile_logo img{
+        width: 20%;
+        margin: 0px;
+        padding: 0px;
+        vertical-align: middle;
+        background-color: #6B48FF;
+    }
+    .Mobile_nav_menu{
+        width: 10%;
+        background-color: #6B48FF;
+        padding: 3.5%;
+    }
+    .Mobile_nav_menu nav{
+        position: fixed;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: #24292F;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: none;
+        width: 150px;
+    }
+    
+    .Mobile_nav_menu nav.active {
+        display: block !important;
+    }
+    
+    .Mobile_nav_menu nav ul {
+        list-style: none;
+        text-align: center;
+    }
+    
+    .Mobile_nav_menu ul li {
+        margin: 10px 0;
+    }
+    
+    .Mobile_nav_menu ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .MenuButton {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    .blog_box{
+        display: block;
+        width: 100%;
+    }
+    .Under_blog_box1{
+        width: 100%;
+    }
+    .Under_blog_box1 img{
+        aspect-ratio: 4/3;
+    }
+    .Under_blog_box2{
+        width: 90%;
+    }
+    .Under_blog_box2 h3{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    .Under_blog_box2 p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .Under_blog_box2 button{
+        font-size: 12px;
+    }
+}
