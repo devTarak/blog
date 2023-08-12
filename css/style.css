@@ -5,3 +5,16 @@
     background-color: #24292F;
     color: #FFF;
 }
+footer .main_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 2%;
+    margin-top: 2%;
+    background-color: #0D1117;
+    text-align: center;
+}
+footer .main_footer p, footer .main_footer p a{
+    background-color: #0D1117;
+    line-height: 1.5em;
+}
