@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title' content="Exploring Recursive Patterns in Java: A Triangular Asterisk Adventure"/>
+    <meta property='og:image' content='https://raw.githubusercontent.com/devTarak/blog/main/img/Mastering-Recursion-Functions-in-Java-Programming.png'/>
+    <meta property='og:description' content="In the world of programming, recursion is a fascinating concept that opens the door to solving complex problems in elegant and efficient ways."/>
+    <meta property='og:url' content='https://devtarak.github.io/blog/'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website'/>
+    <title>Exploring Recursive Patterns in Java: A Triangular Asterisk Adventure</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_desktop.css" media="(min-width: 1280px)">
+    <link rel="stylesheet" href="../css/style_tablet.css" media="(max-width: 1279px)">
+    <link rel="stylesheet" href="../css/style_mobile.css" media="(max-width: 600px)">
+    <style>
+        .title1{
+            text-align: center;
+            padding-bottom: 2%;
+        }
+        .col_2_blog{
+			width: 70%;
+		}
+	    .col_2_blog h2{
+		    font-size: 2em;
+	    }
+	    .col_2_blog h3{
+		   font-size: 1.5em; 
+	    }
+        .col_2_blog h2, .col_2_blog h3{
+		padding-top:1%;
+            padding-bottom: 1%;
+        }
+        .col_2_blog img{
+            aspect-ratio: 4/3;
+            width: 70%;
+        }
+        .col_2_blog p, .col_2_blog strong{
+            padding: 1% 0%;
+	    font-size: 22px;
+        }
+        .col_2_blog ol li a{
+            padding-bottom: 1%;
+            font-size: 18px;
+            display: flex;
+        }
+
+        .col_2_blog pre{
+            width: 100%;
+            display: grid;
+            margin: auto;
+            padding: auto;
+        }
+        .col_2_blog pre code{
+            padding: 4%;
+            background-color: #444654;
+            border-radius: 5px;
+            margin: auto;
+            white-space: pre-wrap;
+        }
+
+        @media screen and (max-width: 715px){
+		.col_2_blog{
+			width: 100%;
+		}
+            .col_2_blog img{
+            width: 100% !important;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="col_1">
+            <div class="col_1_1">
+                <a href="https://devtarak.github.io/blog/"><img src="../img/logo.png" alt="Tara Logo"></a>
+                <h1>Tarak's Blog</h1>
+            </div>
+            <div class="col_1_2">
+                <p>Welcome to Tarak Blogs, your ultimate hub for all things tech! Whether you're a coding enthusiast, a curious learner, or a seasoned IT professional, we're here to fuel your passion for innovation. </p>
+            </div>
+        </div>
+        <div class="main_menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="../cattagory/Tranding.html">Tranding</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+        <div class="Mobile_head">
+            <div class="Mobile_logo">
+                <a href="https://devtarak.github.io/blog/"><img src="../img/logo.png" alt="tarak Logo"></a>
+            </div>
+            <div class="Mobile_nav_menu">
+                <button class="MenuButton">&#9776;</button>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../cattagory/Tranding.html">Tranding</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="col_2">
+        <div class="col_2_blog">
+            <article>
+              <h1 class='title1'>Exploring Recursive Patterns in Java: A Triangular Asterisk Adventure</h1>
+
+    <h2>Introduction:</h2>
+    <p>In the world of programming, recursion is a fascinating concept that opens the door to solving complex problems in elegant and efficient ways. In this blog post, we'll dive into the realm of recursive patterns using a simple Java program that generates a beautiful triangular pattern of asterisks. By the end of this post, you'll have a deeper understanding of recursion and how it can be harnessed to create stunning visual patterns.</p>
+
+    <h2>Understanding the Code:</h2>
+    <p>Let's start by dissecting the Java code that generates the triangular asterisk pattern:</p>
+    <pre><code>
+public class Pattern {
+    public static void col(int j, int i) {
+        if (i >= j) {
+            System.out.print("* ");
+            col(j + 1, i);
+        }
+    }
+
+    public static void row(int i) {
+        if (i >= 1) {
+            col(1, i);
+            System.out.println();
+            row(i - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        row(4);
+    }
+}
+    </code></pre>
+
+    <h3>1. The <code>col</code> Method:</h3>
+    <p>The <code>col</code> method is at the heart of this pattern generation. It is a recursive function that takes two parameters: <code>j</code> (current column) and <code>i</code> (target column). The method prints an asterisk followed by a space only if <code>i</code> is greater than or equal to <code>j</code>. It then recursively calls itself with <code>j + 1</code> and <code>i</code> as arguments.</p>
+
+    <h3>2. The <code>row</code> Method:</h3>
+    <p>The <code>row</code> method serves as the driver for generating rows of the triangular pattern. It takes a single parameter <code>i</code> (current row) and, if <code>i</code> is greater than or equal to 1, calls the <code>col</code> method with <code>j</code> set to 1 and <code>i</code> as an argument. After printing a row, it moves to the next line using <code>System.out.println()</code> and then recursively calls itself with <code>i - 1</code>.</p>
+
+    <h3>3. The <code>main</code> Method:</h3>
+    <p>In the <code>main</code> method, the entire pattern generation process is initiated by calling the <code>row</code> method with an initial value of 4. This will generate a triangular pattern with 4 rows.</p>
+
+    <h2>Exploring the Output:</h2>
+    <p>When you run the program, the console output will display a visually pleasing triangular pattern of asterisks:</p>
+    <pre>
+<code>
+* 
+* * 
+* * * 
+* * * * 
+    </code>
+</pre>
+
+    <p>Each row in the pattern contains an increasing number of asterisks, creating a sense of depth and symmetry. This simple yet elegant pattern showcases the power of recursion in generating complex structures from simple rules.</p>
+
+    <h2>Conclusion:</h2>
+    <p>Recursion is a powerful technique that enables programmers to solve intricate problems by breaking them down into smaller, more manageable subproblems. In this blog post, we explored a Java program that leverages recursion to create a captivating triangular pattern of asterisks. By understanding how the <code>col</code> and <code>row</code> methods work together, you've gained insights into the mechanics of recursive pattern generation. As you continue your programming journey, remember that recursion is not only a tool for solving problems but also a creative avenue for crafting visually stunning designs.</p>
+            </article>
+        </div>
+	<div class="col_2_side">
+			 
+	</div>
+    </div>
+    <script>
+        const menuButton = document.querySelector('.MenuButton');
+        const mobileNavMenu = document.querySelector('.Mobile_nav_menu nav');
+    
+        menuButton.addEventListener('click', () => {
+            mobileNavMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
