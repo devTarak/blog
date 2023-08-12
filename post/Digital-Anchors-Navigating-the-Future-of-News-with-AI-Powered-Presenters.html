@@ -21,17 +21,36 @@
             text-align: center;
             padding-bottom: 2%;
         }
+        .col_2_blog{
+			width: 70%;
+		}
+	    .col_2_blog h2{
+		    font-size: 2em;
+	    }
+	    .col_2_blog h3{
+		   font-size: 1.5em; 
+	    }
         .col_2_blog h2, .col_2_blog h3{
+		padding-top:1%;
             padding-bottom: 1%;
         }
         .col_2_blog img{
             aspect-ratio: 4/3;
             width: 50%;
         }
-        .col_2_blog p{
-            padding-bottom: 2%;
+        .col_2_blog p, .col_2_blog strong{
+            padding: 1% 0%;
+	    font-size: 22px;
         }
         @media screen and (max-width: 715px){
+            .col_2_blog img{
+            width: 100% !important;
+        }
+        }
+        @media screen and (max-width: 715px){
+		.col_2_blog{
+			width: 100%;
+		}
             .col_2_blog img{
             width: 100% !important;
         }
@@ -124,6 +143,8 @@
       <p>The rise of AI news anchors signifies a paradigm shift in journalism. While the benefits of efficiency and accessibility are evident, the challenges and ethical concerns cannot be ignored. As technology continues to advance, the key lies in striking a balance between AI automation and the irreplaceable human qualities that make news anchors trusted figures in our society. The journey towards an AI-assisted news broadcasting future should be guided by thoughtful consideration, ethical standards, and a commitment to preserving the essence of journalism in the digital age.</p>
             </article>
         </div>
+        <div class="col_2_side">
+		</div>
     </div>
     <script>
         const menuButton = document.querySelector('.MenuButton');
