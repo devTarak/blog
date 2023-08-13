@@ -110,3 +110,16 @@ footer .main_footer p, footer .main_footer p a{
   padding: .4% 1%;
   border-radius: 50px;
 }
+.Gallery_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.Gallery_button button{
+  width: 30%;
+  padding: 2% 3%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
