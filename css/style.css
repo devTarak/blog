@@ -25,6 +25,7 @@ footer .main_footer p, footer .main_footer p a{
     border-radius: 5px;
     border-top: 0px;
     border-color: #6B48FF;
+    margin-top: 3%;
 }
 .col_2_2 .Social_row{
     display: flex;
