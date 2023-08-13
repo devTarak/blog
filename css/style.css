@@ -5,6 +5,11 @@
     background-color: #24292F;
     color: #FFF;
 }
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 footer .main_footer{
     display: flex;
     justify-content: center;
