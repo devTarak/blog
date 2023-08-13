@@ -130,4 +130,63 @@
     .Mobile_head{
         display:none;
     }
+    /* Gallery css*/
+.gallery_main {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 5px 0px;
+  justify-content: center;
+}
+
+.image_main {
+  overflow: hidden;
+  width: 33%;
+}
+
+.image_main img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image_main img:hover {
+  transform: scale(1.1);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 101;
+}
+
+.close-button {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 101;
+  background-color: #6948ff46;
+  opacity: 1;
+  padding: .4% 1%;
+  border-radius: 50px;
+}
 }
