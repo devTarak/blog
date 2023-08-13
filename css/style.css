@@ -86,6 +86,7 @@ footer .main_footer p, footer .main_footer p a{
   background: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
+  z-index: 101;
 }
 
 .lightbox img {
@@ -93,19 +94,19 @@ footer .main_footer p, footer .main_footer p a{
   max-height: 90%;
   border: 2px solid #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 101;
 }
 
 .close-button {
   position: absolute;
-  top: 20px;
+  top: 20%;
   right: 20px;
   font-size: 30px;
   color: #fff;
   cursor: pointer;
-}
-@media (max-width: 768px) {
-  .lightbox img {
-    max-width: 80%;
-    max-height: 80%;
-  }
+  z-index: 101;
+  background-color: #6948ff46;
+  opacity: 1;
+  padding: .4% 1%;
+  border-radius: 50px;
 }
