@@ -123,3 +123,64 @@ footer .main_footer p, footer .main_footer p a{
   cursor: pointer;
   border-radius: 5px;
 }
+
+
+
+
+/* Common styles for both mobile and desktop */
+.My_gallery_main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.gallery_main {
+  overflow: hidden;
+}
+
+.image_main img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image_main img:hover {
+  transform: scale(1.1);
+}
+
+.lightbox_main {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+.lightbox_main img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 101;
+}
+
+.close-button_main {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 101;
+  background-color: #6948ff46;
+  opacity: 1;
+  padding: .4% 1%;
+  border-radius: 50px;
+}
