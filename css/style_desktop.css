@@ -155,7 +155,7 @@
   transform: scale(1.1);
 }
 
-.lightbox {
+.lightbox_main {
   display: none;
   position: fixed;
   top: 0;
@@ -168,7 +168,7 @@
   z-index: 101;
 }
 
-.lightbox img {
+.lightbox_main img {
   max-width: 90%;
   max-height: 90%;
   border: 2px solid #fff;
@@ -176,7 +176,7 @@
   z-index: 101;
 }
 
-.close-button {
+.close-button_main {
   position: absolute;
   top: 20%;
   right: 20px;
