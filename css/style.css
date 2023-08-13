@@ -18,3 +18,29 @@ footer .main_footer p, footer .main_footer p a{
     background-color: #0D1117;
     line-height: 1.5em;
 }
+.col_2_2 #Social_Title h3{
+    background-color: #0D1117;
+    padding: 2%;
+    border-style: solid;
+    border-radius: 5px;
+    border-top: 0px;
+    border-color: #6B48FF;
+}
+.col_2_2 .Social_row{
+    display: flex;
+    padding: 4%;
+}
+.col_2_2 .Social_row .Social_row1{
+    width: 50%;
+    margin-right: 5%;
+}
+.col_2_2 .Social_row .Social_row1 a{
+    display: flex;
+    align-items: center;
+    background-color: #6B48FF;
+    padding: 4%;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 5%;
+}
