@@ -130,6 +130,9 @@
     .Mobile_head{
         display:none;
     }
+    .gallery_main {
+        width: calc(50% - 5px);
+      }
 }
 @media screen and (max-width: 769px){
     .main_menu ul{
