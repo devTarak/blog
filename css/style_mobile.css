@@ -103,4 +103,12 @@
     .Under_blog_box2 button{
         font-size: 12px;
     }
+
+    .gallery_main {
+        width: calc(50% - 5px);
+      }
+      .close-button_main {
+        top: 10%;
+        right: 20px;
+      }
 }
