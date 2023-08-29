@@ -111,4 +111,10 @@
         top: 10%;
         right: 20px;
       }
+      .close-button {
+        top: 10%;
+        right: 20px;
+        z-index: 101
+        padding: 0.4% 3%;
+    }
 }
