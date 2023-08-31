@@ -32,6 +32,9 @@
         vertical-align: middle;
         background-color: #6B48FF;
     }
+    .Mobile_head .Mobile_logo a{
+        background-color: transparent;
+    }
     .Mobile_nav_menu{
         width: 10%;
         background-color: #6B48FF;
@@ -117,4 +120,15 @@
         z-index: 101;
         padding: 0.4% 3%;
     }
+    .Main_Logo_mb_1 {
+        opacity: 0; /* Initially hide the image */
+        transform: translateY(10%); /* Move the image downward */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Apply transitions */
+        background-color: transparent;
+      }
+      
+      .Main_Logo_mb_1.show_mb {
+        opacity: 1; /* Show the image */
+        transform: translateY(0); /* Move the image upward */
+      }
 }
