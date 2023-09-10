@@ -2,8 +2,20 @@
     margin: 0;
     padding: 0%;
     font-family: Montserrat;
-    background-color: #24292F;
-    color: #FFF;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+:root{
+  --primary-color: #24292F;
+  --secondary-color: #FFF;
+  --tired-color: #0D1117;
+  --forth-color: #6B48FF;
+}
+.light-Theme{
+  --primary-color: #FFF;
+  --secondary-color: #24292F;
+  --tired-color: #f1f1f1;
+  --forth-color: #6B48FF;
 }
 header{
   position: sticky;
@@ -16,20 +28,20 @@ footer .main_footer{
     align-items: center;
     padding: 4% 2%;
     margin-top: 2%;
-    background-color: #0D1117;
+    background-color: var(--tired-color);
     text-align: center;
 }
 footer .main_footer p, footer .main_footer p a{
-    background-color: #0D1117;
+    background-color: var(--tired-color);
     line-height: 1.5em;
 }
 .col_2_2 #Social_Title h3{
-    background-color: #0D1117;
+    background-color: var(--tired-color);
     padding: 2%;
     border-style: solid;
     border-radius: 5px;
     border-top: 0px;
-    border-color: #6B48FF;
+    border-color: var(--forth-color);
     margin-top: 3%;
 }
 .col_2_2 .Social_row{
@@ -43,7 +55,7 @@ footer .main_footer p, footer .main_footer p a{
 .col_2_2 .Social_row .Social_row1 a{
     display: flex;
     align-items: center;
-    background-color: #6B48FF;
+    background-color: var(--forth-color);
     padding: 4%;
     width: 100%;
     text-decoration: none;
@@ -92,7 +104,7 @@ footer .main_footer p, footer .main_footer p a{
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
-  border: 2px solid #fff;
+  border: 2px solid var(--secondary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 101;
 }
@@ -102,7 +114,7 @@ footer .main_footer p, footer .main_footer p a{
   top: 20%;
   right: 20px;
   font-size: 30px;
-  color: #fff;
+  color: var(--secondary-color);
   cursor: pointer;
   z-index: 101;
   background-color: #6948ff46;
@@ -166,7 +178,7 @@ footer .main_footer p, footer .main_footer p a{
 .lightbox_main img {
   max-width: 90%;
   max-height: 90%;
-  border: 2px solid #fff;
+  border: 2px solid var(--secondary-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 101;
 }
@@ -176,7 +188,7 @@ footer .main_footer p, footer .main_footer p a{
   top: 20%;
   right: 20px;
   font-size: 30px;
-  color: #fff;
+  color: var(--secondary-color);
   cursor: pointer;
   z-index: 101;
   background-color: #6948ff46;
@@ -193,4 +205,10 @@ footer .main_footer p, footer .main_footer p a{
 .Main_Logo_1.show {
   opacity: 1; /* Show the image */
   transform: translateY(0); /* Move the image upward */
+}
+#myThemeIcon{
+  width: 30px;
+  height: auto;
+  background: transparent;
+  padding-right: 2%;
 }
