@@ -1,6 +1,6 @@
 @media screen and (max-width: 1279px){
     .col_1{
-        background-color: #24292F;
+        background-color: var(--primary-color);
         padding: .7% 0;
         display: flex;
     }
@@ -15,7 +15,7 @@
         width: 100%;
     }
     .col_1_1 h1{
-        color: white;
+        color: var(--secondary-color);
         padding: 7% 2% 2% 2%;
         font-size: 26px;
     }
@@ -23,13 +23,13 @@
         width: 80%;
     }
     .col_1_2 p{
-        color: white;
+        color: var(--secondary-color);
         font-size: 16px;
         text-align: center;
         padding: 2% 1% 1% 1%;
     }
     .main_menu{
-       background-color: #6B48FF;
+       background-color: var(--forth-color);
        margin: 0;
        padding: auto;
     }
@@ -41,30 +41,30 @@
         margin-left: auto;
         margin-right: auto;
         width: 40%;
-        background-color: #6B48FF;
+        background-color: var(--forth-color);
     }
     .main_menu ul li{
         display: inline-block;
         padding: 0 15px 0 15px;
         text-align: center;
         font-size: 18px;
-        background-color: #6B48FF;
+        background-color: var(--forth-color);
     }
     .main_menu ul li a{
         text-decoration: none;
-        color: white;
+        color: var(--secondary-color);
         text-align: center;
-        background-color: #6B48FF;
+        background-color: var(--forth-color);
     }
     .main_menu ul li a:hover{
-        background-color: white;
-        color: #6B48FF;
+        background-color: var(--secondary-color);
+        color: var(--forth-color);
         padding: 1% 10%;
         border-radius: 2px;
     }
     .main_menu ul li a:active{
-        background-color: white;
-        color: #6B48FF;
+        background-color: var(--secondary-color);
+        color: var(--forth-color);
         padding: 1% 8%;
         border-radius: 2px;
     }
@@ -78,51 +78,51 @@
     }
     .blog_box{
         display: flex;
-        background-color: #0D1117;
+        background-color: var(--tired-color);
         padding: 1%;
         margin: 1% 1% 5% 1%;
         border-radius: 5px;
     }
     .Under_blog_box1{
         width: 30%;
-        background-color: #0D1117;
+        background-color: var(--tired-color);
     }
     .Under_blog_box1 img{
         width: 100%;
-        background-color: #0D1117;
+        background-color: var(--tired-color);
         aspect-ratio: 1 / 1;
     }
     .Under_blog_box2{
         width: 70%;
         padding: 2%;
-        background-color: #0D1117;
+        background-color: var(--tired-color);
     }
     .Under_blog_box2 h3{
         font-size: 22px;
         font-weight: 700;
-        background-color: #0D1117;
-        color: white;
+        background-color: var(--tired-color);
+        color: var(--secondary-color);
         padding-bottom: 2%;
     }
     .Under_blog_box2 p{
         font-size: 16px;
         font-weight: 500;
-        background-color: #0D1117;
-        color: white;
+        background-color: var(--tired-color);
+        color: var(--secondary-color);
     }
     .Under_blog_box2 button{
-        background-color: #6B48FF;
+        background-color: var(--forth-color);
         border: none;
         border-radius: 2px;
         padding: 2%;
         margin-top: 3%;
         font-size: 14px;
-        color: #ffffff;
+        color: var(--fith-color);
         cursor: pointer;
     }
     .Under_blog_box2 button:hover{
-        background-color: #ffffff;
-        color: #6B48FF;
+        background-color: var(--secondary-color);
+        color: var(--forth-color);
     }
     .col_2_2{
         width: 30%;

@@ -15,14 +15,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #6B48FF;
-        color: #fff;
+        background-color: var(--forth-color);
+        color: var(--secondary-color);
         padding: 0;
     }
     .Mobile_head .Mobile_logo{
         display: flex;
         width: 90%;
-        background-color: #6B48FF;
+        background-color: var(--forth-color);
         margin: 0px;
         padding: 0;
     }
@@ -38,7 +38,7 @@
     }
     .Mobile_nav_menu{
         width: 10%;
-        background-color: #6B48FF;
+        background-color: var(--forth-color);
         padding: 3.5%;
     }
     .Mobile_nav_menu nav{
@@ -46,8 +46,8 @@
         top: 12%;
         left: 50%;
         transform: translate(-50%, 0%);
-        background-color: #24292F;
-        color: #fff;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
         padding: 10px;
         border-radius: 5px;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -70,7 +70,7 @@
     }
     
     .Mobile_nav_menu ul li a {
-        color: #fff;
+        color: var(--secondary-color);
         text-decoration: none;
     }
     .MenuButton {
@@ -78,7 +78,7 @@
         background: none;
         border: none;
         font-size: 1.5rem;
-        color: #fff;
+        color: var(--fith-color);
         cursor: pointer;
     }
     .blog_box{
