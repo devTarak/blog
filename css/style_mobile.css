@@ -20,12 +20,13 @@
         padding: 0;
     }
     .Mobile_head .Mobile_logo{
+        display: flex;
         width: 90%;
         background-color: #6B48FF;
         margin: 0px;
         padding: 0;
     }
-    .Mobile_head .Mobile_logo img{
+    .Mobile_head .Mobile_logo .Main_Logo_mb_1{
         width: 20%;
         margin: 0px;
         padding: 0px;
@@ -131,4 +132,15 @@
         opacity: 1; /* Show the image */
         transform: translateY(0); /* Move the image upward */
       }
+}
+#myThemeIcon{
+    display: none;
+}
+#myThemeIcon_mob{
+    width: 30px !important;
+    height: 30px !important;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    padding-top: 4%;
 }

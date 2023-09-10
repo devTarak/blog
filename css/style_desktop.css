@@ -53,12 +53,12 @@
     }
     .main_menu ul li a{
         text-decoration: none;
-        color: var(--secondary-color);
+        color: var(--fith-color);
         text-align: center;
         background-color: var(--forth-color);
     }
     .main_menu ul li a:hover{
-        background-color: var(--secondary-color);
+        background-color: var(--fith-color);
         color: var(--forth-color);
         padding: 1% 10%;
         border-radius: 2px;
@@ -118,7 +118,7 @@
         padding: 2%;
         margin-top: 3%;
         font-size: 16px;
-        color: var(--secondary-color);
+        color: var(--fith-color);
         cursor: pointer;
     }
     .Under_blog_box2 button:hover{
@@ -137,3 +137,9 @@
         width: calc(50% - 5px);
       }
 }
+#myThemeIcon{
+    width: 30px;
+    height: auto;
+    background: transparent;
+    padding-right: 2%;
+  }

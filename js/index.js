@@ -20,3 +20,12 @@ myThemeIcon.onclick = function(){
         myThemeIcon.src = "img/sun.png";
     }
 }
+var myThemeIcon_mob = document.getElementById("myThemeIcon_mob");
+myThemeIcon_mob.onclick = function(){
+    document.body.classList.toggle("light-Theme");
+    if(document.body.classList.contains("light-Theme")){
+        myThemeIcon_mob.src = "img/moon.png";
+    }else{
+        myThemeIcon_mob.src = "img/sun.png";
+    }
+}

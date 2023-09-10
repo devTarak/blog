@@ -10,12 +10,14 @@
   --secondary-color: #FFF;
   --tired-color: #0D1117;
   --forth-color: #6B48FF;
+  --fith-color: #f3f3f3;
 }
 .light-Theme{
   --primary-color: #FFF;
   --secondary-color: #24292F;
   --tired-color: #f1f1f1;
   --forth-color: #6B48FF;
+  --fith-color: #f3f3f3;
 }
 header{
   position: sticky;
@@ -47,6 +49,9 @@ footer .main_footer p, footer .main_footer p a{
 .col_2_2 .Social_row{
     display: flex;
     padding: 4%;
+}
+.col_2_2 .Social_row h4{
+  color: var(--fith-color);
 }
 .col_2_2 .Social_row .Social_row1{
     width: 50%;
@@ -205,10 +210,4 @@ footer .main_footer p, footer .main_footer p a{
 .Main_Logo_1.show {
   opacity: 1; /* Show the image */
   transform: translateY(0); /* Move the image upward */
-}
-#myThemeIcon{
-  width: 30px;
-  height: auto;
-  background: transparent;
-  padding-right: 2%;
 }
