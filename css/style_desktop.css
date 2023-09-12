@@ -132,10 +132,6 @@
     .Mobile_head{
         display:none;
     }
-
-    .gallery_main {
-        width: calc(50% - 5px);
-      }
 }
 #myThemeIcon{
     width: 30px;
