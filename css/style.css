@@ -145,22 +145,25 @@ footer .main_footer p, footer .main_footer p a{
 
 
 /* Common styles for both mobile and desktop */
-.My_gallery_main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: space-between;
-}
-
 .gallery_main {
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(173px, 1fr));
+  grid-gap: 15px;
 }
-
+.image_main{
+  position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
 .image_main img {
-  width: 100%;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s;
+ display: block;
+width: 100%;
+height: auto;
+border-radius: 5px;
+cursor: pointer;
+transition: transform 0.2s;
 }
 
 .image_main img:hover {
