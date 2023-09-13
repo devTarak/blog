@@ -213,4 +213,5 @@ transition: transform 0.2s;
 .Main_Logo_1.show {
   opacity: 1; /* Show the image */
   transform: translateY(0); /* Move the image upward */
+margin-bottom: -4%;
 }
