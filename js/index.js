@@ -37,6 +37,11 @@ myThemeIcon.addEventListener('click', function () {
 var myThemeIcon_mob = document.getElementById('myThemeIcon_mob');
 myThemeIcon_mob.addEventListener('click', function () {
   document.body.classList.toggle('light-Theme');
+  if(document.body.classList.contains('light-Theme')){
+    myThemeIcon_mob.src ="../img/moon.png";
+  }else{
+    myThemeIcon_mob.src = "../img/sun.png"
+  }
   const isLightTheme = document.body.classList.contains('light-Theme');
 
   // Store the user's theme choice
