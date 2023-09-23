@@ -1,10 +1,10 @@
 @media screen and (min-width: 1280px){
- 
     .col_1{
         background-color: var(--primary-color);
-        padding: .7% 0;
         display: flex;
-        padding: 0 1%;
+        padding: 0% 1%;
+        margin: auto;
+        width: 1260px;
     }
     .col_1_1{
         display: flex;
@@ -30,18 +30,17 @@
     }
     .main_menu{
        background-color: var(--forth-color);
-       margin: 0;
+       margin: auto;
        padding: auto;
        display: flex;
     }
     .main_menu ul{
+        text-align: center;
         list-style: none;
-        margin: 0;
+        margin: auto;
         padding: .5% 0;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 30%;
+        width:1260px;
         background-color: var(--forth-color);
     }
     .main_menu ul li{
@@ -72,7 +71,9 @@
     .col_2{
         display: flex;
         margin-top: 3%;
-        padding: 0 5%;
+        padding: 0 0%;
+        margin: auto;
+        width: 1260px;
     }
     .col_2_1{
         width: 70%;
