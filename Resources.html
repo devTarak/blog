@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property='og:title' content='Personal Corner of Tarak'/>
+    <meta property='og:title' content='Dev Tarak- Blogs'/>
     <meta property='og:image' content='https://raw.githubusercontent.com/devTarak/blog/main/img/BlogFeatured%20Image.png'/>
     <meta property='og:description' content="Welcome to Tarak Blogs, your ultimate hub for all things tech! Whether you're a coding enthusiast, a curious learner, or a seasoned IT professional, we're here to fuel your passion for innovation."/>
     <meta property='og:url' content='https://devtarak.github.io/blog/'/>
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='627' />
     <meta property="og:type" content='website'/>
-    <title>Personal Corner of Tarak</title>
+    <title>Dev Tarak >> Blogs</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_desktop.css" media="(min-width: 1280px)">
@@ -19,8 +18,33 @@
     <link rel="stylesheet" href="css/style_mobile.css" media="(max-width: 714px)">
 </head>
 <body>
-    <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="tSJ204In"></script>
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "108346468589437");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header>
         <div class="col_1">
             <div class="col_1_1">
@@ -36,7 +60,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="cattagory/Tranding.html">Tranding</a></li>
                 <li><a href="#">News</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="Resources.html">Resources</a></li>
             </ul>
             <img src="https://raw.githubusercontent.com/devTarak/blog/main/img/sun.png" alt="Incon" id="myThemeIcon">
         </div>
@@ -60,10 +84,78 @@
     </header>
     <div class="col_2">
         <div class="col_2_1">
-          <!--Content-->
-           
-            <!--Content End-->
-      <div class="col_2_2">
+            <div class="blog_box">
+                    <div class="Under_blog_box1">
+                            <img src="https://raw.githubusercontent.com/devTarak/blog/main/img/the-ultimate-python-programming-learning-roadmap-a-comprehensive-guide.png" alt="The Ultimate Python Programming Learning Roadmap: A Comprehensive Guide">
+                    </div>
+                    <div class="Under_blog_box2">
+                            <h3>The Ultimate Python Programming Learning Roadmap: A Comprehensive Guide</h3>
+                            <p>Are you interested in mastering Python programming and becoming a proficient developer? Python is an incredibly versatile and widely-used programming language that...</p>
+                            <button onclick="window.location.href='https://devtarak.github.io/blog/post/the-ultimate-python-programming-learning-roadmap-a-comprehensive-guide.html';">Learn more</button>
+                    </div>
+            </div>
+            <div class="blog_box">
+                    <div class="Under_blog_box1">
+                            <img src="https://raw.githubusercontent.com/devTarak/blog/main/img/Launching-Coxs-Bazar-Polytechnic-Institutes-new-telephone-Directory-Android-Application.png" alt="The Ultimate Python Programming Learning Roadmap: A Comprehensive Guide">
+                    </div>
+                    <div class="Under_blog_box2">
+                            <h3>Cox's Bazar Polytechnic Institute Launches New Telephone Directory Application</h3>
+                            <p>Cox's Bazar Polytechnic Institute (CBPI) has launched a new telephone directory application to help students, faculty, and staff easily find the contact information they need. The application, which is available for free on the Link bellow, features a searchable database of all CBPI Teachers and staffs phone numbers,...</p>
+                            <button onclick="window.location.href='https://devtarak.github.io/blog/post/Launching-Coxs-Bazar-Polytechnic-Institutes-new-telephone-Directory-Android-Application.html';">Learn more</button>
+                    </div>
+            </div>
+            <div class="blog_box">
+                    <div class="Under_blog_box1">
+                            <img src="img/20.jpg" alt="AI Chronicles: Pioneering a Digital Renaissance in Bangladesh">
+                    </div>
+                    <div class="Under_blog_box2">
+                            <h3>AI Chronicles: Pioneering a Digital Renaissance in Bangladesh</h3>
+                            <p>Bangladesh, often celebrated for its traditional industries like textiles and agriculture, is embracing the digital age with open arms. AI, once a distant concept, is now finding its place within the nation's borders.</p>
+                            <button onclick="window.location.href='post/AI-Chronicles-Pioneering-a-Digital-Renaissance-in-Bangladesh.html';">Learn more</button>
+                    </div>
+            </div>
+            <div class="blog_box">
+                <div class="Under_blog_box1">
+                    <img src="https://raw.githubusercontent.com/devTarak/blog/main/img/Exploring%20Recursive%20Patterns%20in%20Java%20A%20Triangular%20Asterisk%20Adventure.png" alt="Blog icon">
+                </div>
+                <div class="Under_blog_box2">
+                    <h3>Exploring Recursive Patterns in Java: A Triangular Asterisk Adventure</h3>
+                    <p>In the world of programming, recursion is a fascinating concept that opens the door to solving complex problems in elegant and efficient ways.</p>
+                    <button onclick="window.location.href='https://devtarak.github.io/blog/post/Exploring-Recursive-Patterns-in-Java-A-Triangular-Asterisk-Adventure.html';">Learn more</button>
+                </div>
+            </div>
+            <div class="blog_box">
+                <div class="Under_blog_box1">
+                    <img src="img/Digital-Anchors-Navigating-the-Future-of-News-with-AI-Powered-Presenters.png" alt="Blog icon">
+                </div>
+                <div class="Under_blog_box2">
+                    <h3>Digital Anchors: Navigating the Future of News with AI-Powered Presenters</h3>
+                    <p>In the ever-evolving landscape of technology, the integration of artificial intelligence (AI) into various industries has become a reality. One such industry that has...</p>
+                    <button onclick="window.location.href='https://devtarak.github.io/blog/post/Digital-Anchors-Navigating-the-Future-of-News-with-AI-Powered-Presenters.html';">Learn more</button>
+                </div>
+            </div>
+            <div class="blog_box">
+                <div class="Under_blog_box1">
+                    <img src="https://raw.githubusercontent.com/devTarak/blog/main/img/Mastering-Recursion-Functions-in-Java-Programming.png" alt="Blog icon">
+                </div>
+                <div class="Under_blog_box2">
+                    <h3>Mastering Recursion Functions in Java Programming</h3>
+                    <p>Recursion is a programming technique where a function calls itself to solve a problem. It's a process of breaking down a problem into smaller sub-problems that are similar in nature.</p>
+                    <button onclick="window.location.href='https://devtarak.github.io/blog/post/Mastering-Recursion-Functions-in-Java-Programming.html';">Learn more</button>
+                </div>
+            </div>
+            <div class="blog_box">
+                <div class="Under_blog_box1">
+                    <img src="https://raw.githubusercontent.com/devTarak/blog/main/img/the-ultimate-java-programming-learning-roadmap-your-path-to-mastery.png" alt="Blog icon">
+                </div>
+                <div class="Under_blog_box2">
+                    <h3>The Ultimate Java Programming Learning Roadmap: Your Path to Mastery</h3>
+                    <p>Are you fascinated by the world of programming and eager to dive into the realm of Java? Whether you're a complete beginner or an experienced developer...</p>
+                    <button onclick="window.location.href='https://devtarak.github.io/blog/post/the-ultimate-java-programming-learning-roadmap-your-path-to-mastery.html';">Learn more</button>
+                </div>
+            </div>
+        </div>        
+        <div class="col_2_2">
             <div id="Social_Title">
                 <h3>OUR SOCIAL LINKS</h3>
             </div>
@@ -97,22 +189,25 @@
             <div class="My_gallery">
                 <div class="gallery">
                     <div class="image">
-                      <img src="Gallery/Untitled design (4).png" alt="Image 1">
+                      <img src="Gallery/Untitled design (4).png" alt="Tarak 1">
                     </div>
                     <div class="image">
-                      <img src="Gallery/1691946527441.jpg" alt="Image 2">
+                      <img src="Gallery/1691946527441.jpg" alt="Tarak 2">
                     </div>
                     <div class="image">
-                        <img src="Gallery/Untitled design (5).png" alt="Image 2">
+                        <img src="Gallery/Untitled design (5).png" alt="Tarak 2">
                       </div>
                     <!-- Add more images here -->
                 </div>
                 <div class="gallery">
                     <div class="image">
-                        <img src="Gallery/Untitled design (6).png" alt="Image 2">
+                        <img src="Gallery/Untitled design (6).png" alt="Tarak 2">
                     </div>
                     <div class="image">
-                        <img src="Gallery/Untitled design (7).png" alt="Image 2">
+                        <img src="Gallery/Untitled design (7).png" alt="Dev Tarak 2">
+                    </div>
+                    <div class="image">
+                        <img src="https://raw.githubusercontent.com/devTarak/blog/main/Gallery/tarak_image2334%20(1).jpg" alt="Tarak Photo">
                     </div>
                 </div>
                 <div class="lightbox">
@@ -131,7 +226,6 @@
         </div>
     </footer>
     <script src="js/gallery.js"></script>
-    <script src="js/gallery-main.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
