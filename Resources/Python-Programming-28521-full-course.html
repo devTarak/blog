@@ -24,23 +24,27 @@
         .col_2_blog{
             width:70%;
         }
-        .col_2_blog article{
-            margin-top: 5%;
+        #Hello {
             display: flex;
+            flex-direction: column; /* Adjusted to column layout for mobile */
             padding: 20px;
             background-color: white;
         }
-        .col_2_blog article div{
+        .col_2_blog article{
+            margin-top: 5%;
+            padding: 1%;
+        }
+        #Hello div{
             background: transparent;
         }
         #video-container {
-            flex: 2;
+            width: 100%;
             background: transparent;
         }
 
         #playlist-container {
-            flex: 1;
-            margin-right: 20px; /* Added margin to separate the video and playlist */
+            width: 100%;
+            margin-left: 20px; /* Added margin to separate the video and playlist */
             background: transparent;
         }
         #playlist-container li {
@@ -53,6 +57,10 @@
             border-radius: 5px;
             margin-bottom: 5%;
         }
+        #playlist-container li.active {
+            background-color: var(--forth-color); /* Change to the desired color for the activated video title */
+            color: var(--secondary-color); /* Change to the desired text color for the activated video title */
+        }
         #playlist-container ul {
             list-style: none;
             padding: 0;
@@ -62,15 +70,35 @@
         iframe {
             width: 100%;
             height: 400px;
-            background: transparent;
+            background: url(../img/Select-Lesson.png);
+            background-color: var(--forth-color);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         @media screen and (max-width: 715px){
             .col_2_blog img{
             width: 100% !important;
-        }
+            }
             .col_2_blog{
                 width:100%;
+            }
+            #playlist-container {
+            margin-left: 0px;
+            }
+        }
+        /* Media query for mobile devices */
+        @media only screen and (min-width: 600px) {
+            #Hello {
+                flex-direction: row; /* Reverted to row layout for larger screens */
+            }
+            #video-container{
+                width: 60%;
+            }
+
+            #playlist-container {
+                width: 40%; /* Adjusted width for larger screens */
             }
         }
     </style>
@@ -127,13 +155,15 @@
                 <p>Semester: 2nd</p>
             </div>
             <article>
-                <div id="playlist-container">
-                    <h2 style="background: transparent;color: var(--primary-color); font-size: 40px; margin-bottom: 5%;">Lesson<br></h2>
-                    <ul id="playlist"></ul>
-                </div>
-                <div id="video-container">
-                    <!-- The YouTube iframe will be placed here -->
-                    <iframe id="youtube-player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="Hello">
+                    <div id="video-container">
+                        <!-- The YouTube iframe will be placed here -->
+                        <iframe id="youtube-player" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="playlist-container">
+                        <h2 style="background: transparent;color: var(--primary-color); font-size: 40px; margin-bottom: 5%;">Lesson<br></h2>
+                        <ul id="playlist"></ul>
+                    </div>
                 </div>
             </article>
         </div>
@@ -233,9 +263,17 @@
 
             playlist.addEventListener('click', function (event) {
                 if (event.target.tagName === 'LI') {
+                    // Remove the 'active' class from all list items
+                    playlist.querySelectorAll('li').forEach(item => {
+                        item.classList.remove('active');
+                    });
+
                     const videoId = event.target.getAttribute('data-video-id');
                     const youtubeEmbedUrl = `https://www.youtube.com/embed/${videoId}`;
                     youtubePlayer.src = youtubeEmbedUrl;
+
+                    // Add the 'active' class to the clicked list item
+                    event.target.classList.add('active');
                 }
             });
         });
