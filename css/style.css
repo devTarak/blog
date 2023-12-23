@@ -215,3 +215,6 @@ transition: transform 0.2s;
   transform: translateY(0); /* Move the image upward */
 margin-bottom: -4%;
 }
+.Facebook_page {
+    text-align: center;
+}
