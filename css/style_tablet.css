@@ -131,6 +131,10 @@
     .Mobile_head{
         display:none;
     }
+    img#myThemeIcon {
+    background: none;
+    width: 4%;
+}
 }
 @media screen and (max-width: 769px){
     .main_menu ul{
