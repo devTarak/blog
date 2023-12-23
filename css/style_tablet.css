@@ -32,6 +32,7 @@
        background-color: var(--forth-color);
        margin: 0;
        padding: auto;
+        display:flex;
     }
     .main_menu ul{
         list-style: none;
@@ -40,7 +41,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 80%;
         background-color: var(--forth-color);
     }
     .main_menu ul li{
