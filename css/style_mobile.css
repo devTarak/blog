@@ -32,7 +32,8 @@
         margin: 0px;
         padding: 0px;
         vertical-align: middle;
-        background-color: transparent;
+        background-color: #FFF;
+        border-radius: 16px;
     }
     .Mobile_head .Mobile_logo a{
         background-color: transparent;
